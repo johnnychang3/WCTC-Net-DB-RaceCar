@@ -24,5 +24,9 @@ namespace RaceTrack.RaceTrack.Cars
             Console.WriteLine($"The {Name} comes to a stop and end in position {Position}");
         }
 
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} engine turns off.");
+        }
     }
 }
