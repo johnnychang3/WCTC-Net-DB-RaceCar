@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RaceTrack.RaceTrack.Drivers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,10 @@ namespace RaceTrack.RaceTrack.Cars
             Console.WriteLine($"The {Name} engine starts!");
         }
 
+        public override void Brake()
+        {
+            Console.WriteLine($"The {Name} comes to a stop and end in position {Position}");
+        }
 
     }
 }
