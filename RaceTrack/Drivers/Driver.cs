@@ -34,5 +34,11 @@ namespace RaceTrack.RaceTrack.Drivers
 
         public abstract void Drive();
 
+        public virtual void StopEngine()
+        {
+            Console.WriteLine($"{Name} switches the iginition key to off.");
+            Car.StopEngine();
+        }
+
     }
 }
